@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+    body{
+        background-image: url('img/img.png');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+    .tabel{
+         border: 2px solid #000000;
+         padding: 25px;
+         margin: 200px auto;
+         width: 500px;
+         height: 200px;
+         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+     }
+     thead{
+        font-size: 30px;                                                                        
+     }
+    input[type=text] {
+          width: 100%;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 2px solid black;
+          border-radius: 4px;
+          font-size: 16px;
+          background-image: url('img/person.png');
+          background-size: 30px;
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 50px;
+          opacity: 0.6;
+    }
+    input[type=password] {
+          width: 100%;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 2px solid black;
+          border-radius: 4px;
+          font-size: 16px;
+          background-image: url('img/lock.png');
+          background-size: 30px;
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 50px;
+          opacity: 0.6;
+    }
+     input[type=button] {
+          background-color: black;
+          opacity: 0.6;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          font-size: 20px;
+        }
+        a{
+            color: white;
+           text-decoration: none;
+           font-family: Arial;
+        }
+</style>
+</head>
+<body>
+    <form id="form_login">
+        <table cellpadding="5" class="tabel" >
+            <thead>
+                <tr>
+                    <th colspan="2">Login Form</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><input type="text" name="username" id="username" placeholder="&nbsp; Username" ></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="password" name="password" id="password" placeholder="&nbsp; Password"></td>
+                </tr>
+            </tbody>
+            <tfoot >
+                <tr>
+                    <th colspan="2">
+                        <input type="button" name="proses" value="Login" onclick="Login()">
+                       <a href="" >Register</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a href="" >&emsp;&emsp;Forgot Password</a>
+                    </th>
+                </tr>
+            </tfoot>
+            
+
+        </table>
+    </form>
+    <script src="js/skripku.js"></script>
+</body>
+</html>
